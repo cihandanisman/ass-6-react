@@ -1,11 +1,13 @@
-
-import './App.css';
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import MyNavbar from './components/MyNavbar'
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
+      <MyNavbar />
+    </BrowserRouter>
 
-    </div>
   );
 }
 
