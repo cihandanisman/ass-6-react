@@ -10,7 +10,8 @@ function BlogCard() {
   const [newData, setNewData] = useState([]);
 
   const handleDelete = (item) => {
-    deletedData = 
+    const deletedData = data.filter((product)=> product.id!==item.id)
+    setData(deletedData)
 
   }
 
